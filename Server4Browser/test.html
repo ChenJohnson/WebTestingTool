@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'http://127.0.0.1:1111', true);
+	
+	function sendInfo(){
+		var sendStr = "sdfsdf";
+		//xhr.setRequestHeader("Content-Type", "text/plain");
+		//xhr.setRequestLength("Content-Length", sendStr.length);
+		xhr.send(sendStr);
+	}
+</script>
+<title>Insert title here</title>
+</head>
+
+<body>
+ <form method="post" id="myForm">
+ <center>input1: <input type="text" id="input1"/></center><br>
+ <center>input2: <input type="text" id="input2"/></center><br>
+ <center><input type="button" value="check" name="btnCheck" onclick="sendInfo()"></center>
+ <center><input type="button" value="check1" name="btnCheck1" onclick="sendInfo()"></center>
+ </form>
+</body>
+</html>
